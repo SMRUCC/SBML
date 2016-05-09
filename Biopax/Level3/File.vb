@@ -15,7 +15,12 @@ Namespace MetaCyc.Biopax.Level3
         <XmlElement("SmallMolecule")> Public Property SmallMolecules As SmallMolecule()
 
         Public Shared Function LoadDoc(path As String) As File
-            Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
+            Try
+                Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
+            Catch ex As Exception
+                Call ex.PrintException
+                Throw ex
+            End Try
         End Function
 
         Private Shared Function __cleanXML(sb As StringBuilder) As String
