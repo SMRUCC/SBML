@@ -6,6 +6,7 @@ Imports Microsoft.VisualBasic.CommandLine.Reflection
 Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
 Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic.Scripting.MetaData
+Imports Microsoft.VisualBasic.Terminal.Utility
 
 Namespace ExportServices
 
@@ -54,7 +55,7 @@ Namespace ExportServices
 
         <ExportAPI("KEGGs.Load")>
         Public Function LoadReactions(repository As String) As bGetObject.Reaction()
-            Using cbar As New ConsoleDevice.Utility.CBusyIndicator(_start:=True)
+            Using cbar As New CBusyIndicator(_start:=True)
                 Call Console.WriteLine("Loading KEGG reaction models from the repository:  ")
                 Call Console.WriteLine(repository)
 
