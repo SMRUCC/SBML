@@ -1,24 +1,26 @@
 ﻿Imports System.Text
+Imports Biopax.MetaCyc.Biopax.Level3.Elements
 
 Namespace MetaCyc.Biopax.Level3
 
+    ''' <summary>
+    ''' Biopax RDF xml file.
+    ''' </summary>
     Public Class File
 
-        Public Owl As MetaCyc.Biopax.Level3.Elements.owlOntology
+        Public Property Owl As owlOntology
 
-        Dim Path As String
-
-        Public Overrides Function ToString() As String
-            Return Path
+        Public Shared Function LoadDoc(path As String) As File
+            Return path.LoadXml(Of File)(preprocess:=AddressOf __cleanXML)
         End Function
 
-        Public Shared Function Read(Path As String) As MetaCyc.Biopax.Level3.File
-            Dim File As StringBuilder = New StringBuilder(FileIO.FileSystem.ReadAllText(Path))
-            Dim Xml As File
-            Call File.Replace("xmlns", "XMLNS")
-            Xml = File.ToString.CreateObjectFromXml(Of MetaCyc.Biopax.Level3.File)()
-            Xml.Path = Path
-            Return Xml
+        Private Shared Function __cleanXML(doc As String) As String
+            Dim sb As New StringBuilder(doc)
+
+            Call sb.Replace("<bp:", "<")
+            Call sb.Replace("<owl:", "<")
+
+            Return sb.ToString
         End Function
     End Class
 End Namespace
