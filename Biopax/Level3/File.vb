@@ -1,7 +1,7 @@
 ﻿Imports System.Text
 Imports System.Xml.Serialization
 Imports Biopax.MetaCyc.Biopax.Level3.Elements
-Imports Microsoft.VisualBasic.DocumentFormat.RDF.DocumentElements
+Imports Microsoft.VisualBasic.DocumentFormat.RDF
 
 Namespace MetaCyc.Biopax.Level3
 
@@ -15,12 +15,10 @@ Namespace MetaCyc.Biopax.Level3
         <XmlElement("SmallMolecule")> Public Property SmallMolecules As SmallMolecule()
 
         Public Shared Function LoadDoc(path As String) As File
-            Return path.LoadXml(Of File)(preprocess:=AddressOf __cleanXML)
+            Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
         End Function
 
-        Private Shared Function __cleanXML(doc As String) As String
-            Dim sb As New StringBuilder(doc)
-
+        Private Shared Function __cleanXML(sb As StringBuilder) As String
             Call sb.Replace("<bp:", "<")
             Call sb.Replace("<owl:", "<")
             Call sb.Replace("</bp:", "</")
