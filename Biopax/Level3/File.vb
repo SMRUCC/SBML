@@ -1,4 +1,5 @@
 ﻿Imports System.Text
+Imports System.Xml.Serialization
 Imports Biopax.MetaCyc.Biopax.Level3.Elements
 
 Namespace MetaCyc.Biopax.Level3
@@ -9,6 +10,7 @@ Namespace MetaCyc.Biopax.Level3
     Public Class File
 
         Public Property Owl As owlOntology
+        <XmlElement("SmallMolecule")> Public Property SmallMolecules As SmallMolecule()
 
         Public Shared Function LoadDoc(path As String) As File
             Return path.LoadXml(Of File)(preprocess:=AddressOf __cleanXML)
@@ -19,6 +21,8 @@ Namespace MetaCyc.Biopax.Level3
 
             Call sb.Replace("<bp:", "<")
             Call sb.Replace("<owl:", "<")
+            Call sb.Replace("</bp:", "</")
+            Call sb.Replace("</owl:", "</")
 
             Return sb.ToString
         End Function

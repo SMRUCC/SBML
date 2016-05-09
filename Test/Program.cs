@@ -11,6 +11,11 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            var owl =    Biopax.MetaCyc.Biopax.Level3.File.LoadDoc(@"F:\SBML\data\Escherichia_coli.owl");
+
+
+
+
             var file = LANS.SystemsBiology.Assembly.SBML.Level2.XmlFile.Load(@"F:\1.13.RegPrecise_network\FBA\xcam314565\19.0\data\metabolic-reactions.xml");
             var dd = file.Model.listOfReactions.First();
             double l = dd.LowerBound;
