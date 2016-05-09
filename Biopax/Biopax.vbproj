@@ -112,10 +112,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Biopax\Level2\Elements\Ontology.vb" />
-    <Compile Include="Biopax\Level2\File.vb" />
-    <Compile Include="Biopax\Level3\Elements\OwlOntology.vb" />
-    <Compile Include="Biopax\Level3\File.vb" />
+    <Compile Include="Level2\Elements\Ontology.vb" />
+    <Compile Include="Level2\File.vb" />
+    <Compile Include="Level3\Elements\OwlOntology.vb" />
+    <Compile Include="Level3\File.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -176,6 +176,9 @@
       <Project>{fecce1fd-e1d4-49e3-a668-60bb5e7aed99}</Project>
       <Name>+Microsoft.VisualBasic.Architecture.Framework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Biopax\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
