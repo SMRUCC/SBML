@@ -71,9 +71,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VisualBasic_AppFramework\DocumentFormats\RDF\RDF\DocumentFormat.RDF.vbproj">
+    <ProjectReference Include="..\..\VisualBasic_AppFramework\DocumentFormats\RDF\RDF\VB_RDF.vbproj">
       <Project>{20912ff3-ce68-497c-854d-21e372f11d7c}</Project>
-      <Name>DocumentFormat.RDF</Name>
+      <Name>VB_RDF</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\VisualBasic_AppFramework\Microsoft.VisualBasic.Architecture.Framework\+Microsoft.VisualBasic.Architecture.Framework.vbproj">
       <Project>{fecce1fd-e1d4-49e3-a668-60bb5e7aed99}</Project>
