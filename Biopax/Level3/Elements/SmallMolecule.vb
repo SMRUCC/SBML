@@ -27,3 +27,34 @@ Public Class BiochemicalReaction : Inherits RDFEntity
     Public Property comment As comment
     Public Property dataSource As dataSource
 End Class
+
+Public Class CellularLocationVocabulary : Inherits RDFEntity
+    Public Property term As term
+    <XmlElement> Public Property xref As xref()
+End Class
+
+
+Public Class SmallMoleculeReference : Inherits RDFEntity
+    <XmlElement> Public Property name As name()
+    <XmlElement> Public Property xref As xref()
+End Class
+Public Class UnificationXref : Inherits RDFEntity
+    Public Property db As db
+    Public Property id As id
+    Public Property comment As comment
+    Public Property idVersion As idVersion
+End Class
+Public Class Provenance : Inherits RDFEntity
+    Public Property name As name
+    Public Property comment As comment
+End Class
+
+
+Public Class Complex : Inherits RDFEntity
+    Public Property displayName As displayName
+    Public Property cellularLocation As cellularLocation
+    Public Property componentStoichiometry As componentStoichiometry
+    <XmlElement> Public Property component As comment()
+    <XmlElement> Public Property xref As xref()
+    Public Property dataSource As dataSource
+End Class

@@ -13,9 +13,16 @@ Namespace MetaCyc.Biopax.Level3
     <XmlType(RDF.RDF_PREFIX & "RDF")>
     Public Class File : Inherits RDF
 
-        Public Property Owl As owlOntology
+        <XmlElement("Ontology")> Public Property Owl As owlOntology
         <XmlElement("SmallMolecule")> Public Property SmallMolecules As SmallMolecule()
         <XmlElement> Public Property BiochemicalReaction As BiochemicalReaction()
+
+        <XmlElement> Public Property CellularLocationVocabulary As CellularLocationVocabulary()
+        <XmlElement> Public Property SmallMoleculeReference As SmallMoleculeReference()
+        <XmlElement> Public Property UnificationXref As UnificationXref()
+        <XmlElement> Public Property Provenance As Provenance()
+        <XmlElement> Public Property Complex As Complex()
+
         Public Shared Function LoadDoc(path As String) As File
             Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
         End Function
