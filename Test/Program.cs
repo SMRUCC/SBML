@@ -17,7 +17,7 @@ namespace Test
 
             ddd.SaveAsXml(@"X:\fffff.xml");
 
-            var owl =    Biopax.MetaCyc.Biopax.Level3.File.LoadDoc(@"F:\SBML\data\Escherichia_coli.owl");
+            var owl = Biopax.MetaCyc.Biopax.Level3.File.LoadDoc(@"F:\SBML\data\Escherichia_coli.owl");
 
 
 
