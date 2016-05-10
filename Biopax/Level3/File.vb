@@ -22,6 +22,22 @@ Namespace MetaCyc.Biopax.Level3
         <XmlElement> Public Property UnificationXref As UnificationXref()
         <XmlElement> Public Property Provenance As Provenance()
         <XmlElement> Public Property Complex As Complex()
+        <XmlElement> Public Property Protein As Protein()
+        <XmlElement> Public Property ProteinReference As ProteinReference()
+        <XmlElement> Public Property BioSource As BioSource()
+        <XmlElement> Public Property FragmentFeature As FragmentFeature()
+        <XmlElement> Public Property SequenceInterval As SequenceInterval()
+        <XmlElement> Public Property SequenceSite As SequenceSite()
+        <XmlElement> Public Property Stoichiometry As Stoichiometry()
+
+
+        <XmlElement> Public Property Catalysis As Catalysis()
+        <XmlElement> Public Property RelationshipXref As RelationshipXref()
+        <XmlElement> Public Property RelationshipTypeVocabulary As RelationshipTypeVocabulary()
+
+        <XmlElement> Public Property PublicationXref As PublicationXref()
+
+        <XmlElement> Public Property PhysicalEntity As PhysicalEntity()
 
         Public Shared Function LoadDoc(path As String) As File
             Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
