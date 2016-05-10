@@ -114,6 +114,7 @@
   <ItemGroup>
     <Compile Include="Level2\Elements\Ontology.vb" />
     <Compile Include="Level2\File.vb" />
+    <Compile Include="Level3\Elements\EntityProperty.vb" />
     <Compile Include="Level3\Elements\SmallMolecule.vb" />
     <Compile Include="Level3\Elements\OwlOntology.vb" />
     <Compile Include="Level3\File.vb" />
