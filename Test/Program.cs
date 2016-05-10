@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LANS.SystemsBiology.Assembly.SBML.ExportServices;
+using Microsoft.VisualBasic;
 
 namespace Test
 {
@@ -11,6 +12,11 @@ namespace Test
     {
         static void Main(string[] args)
         {
+
+            var ddd = new Biopax.MetaCyc.Biopax.Level3.File { Owl = new Biopax.MetaCyc.Biopax.Level3.Elements.owlOntology()};
+
+            ddd.SaveAsXml(@"X:\fffff.xml");
+
             var owl =    Biopax.MetaCyc.Biopax.Level3.File.LoadDoc(@"F:\SBML\data\Escherichia_coli.owl");
 
 
