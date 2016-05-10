@@ -145,4 +145,8 @@ Namespace EntityProperties
     Public Class controlType : Inherits EntityProperty
 
     End Class
+
+    Public Class feature : Inherits EntityProperty
+
+    End Class
 End Namespace

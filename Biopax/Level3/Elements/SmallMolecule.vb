@@ -58,3 +58,25 @@ Public Class Complex : Inherits RDFEntity
     <XmlElement> Public Property xref As xref()
     Public Property dataSource As dataSource
 End Class
+
+
+
+Public Class Protein : Inherits RDFEntity
+    Public Property displayName As displayName
+    Public Property cellularLocation As cellularLocation
+    Public Property entityReference As entityReference
+    Public Property feature As feature
+    Public Property comment As comment
+    <XmlElement> Public Property xref As xref()
+    Public Property dataSource As dataSource
+End Class
+Public Class ProteinReference : Inherits RDFEntity
+    Public Property organism As organism
+    <XmlElement> Public Property name As name()
+    <XmlElement> Public Property xref As xref()
+    Public Property comment As comment
+End Class
+Public Class BioSource : Inherits RDFEntity
+    Public Property name As name
+    <XmlElement> Public Property xref As xref()
+End Class
