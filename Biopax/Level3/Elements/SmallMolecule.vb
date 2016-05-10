@@ -15,3 +15,15 @@ Public Class SmallMolecule : Inherits RDFEntity
     Public Property dataSource As dataSource
 
 End Class
+
+
+Public Class BiochemicalReaction : Inherits RDFEntity
+    Public Property conversionDirection As conversionDirection
+    <XmlElement> Public Property left As left()
+    <XmlElement> Public Property right As right()
+    Public Property eCNumber As eCNumber
+    Public Property displayName As displayName
+    <XmlElement> Public Property xref As xref()
+    Public Property comment As comment
+    Public Property dataSource As dataSource
+End Class

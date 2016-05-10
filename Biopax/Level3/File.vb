@@ -15,7 +15,7 @@ Namespace MetaCyc.Biopax.Level3
 
         Public Property Owl As owlOntology
         <XmlElement("SmallMolecule")> Public Property SmallMolecules As SmallMolecule()
-
+        <XmlElement> Public Property BiochemicalReaction As BiochemicalReaction()
         Public Shared Function LoadDoc(path As String) As File
             Return RDF.LoadDocument(Of File)(path, AddressOf __cleanXML)
         End Function
