@@ -5,6 +5,7 @@ Imports Microsoft.VisualBasic.DocumentFormat.RDF
 <XmlType("SmallMolecule")>
 Public Class SmallMolecule : Inherits RDFEntity
 
+    Public Property standardName As standardName
     Public Property displayName As displayName
 
     <XmlElement("name")> Public Property names As name()
@@ -33,10 +34,15 @@ Public Class CellularLocationVocabulary : Inherits RDFEntity
     <XmlElement> Public Property xref As xref()
 End Class
 
+Public Class ChemicalStructure : Inherits RDFEntity
+    Public Property structureFormat As structureFormat
+    Public Property structureData As structureData
+End Class
 
 Public Class SmallMoleculeReference : Inherits RDFEntity
     <XmlElement> Public Property name As name()
     <XmlElement> Public Property xref As xref()
+    Public Property molecularWeight As molecularWeight
 End Class
 Public Class UnificationXref : Inherits RDFEntity
     Public Property db As db

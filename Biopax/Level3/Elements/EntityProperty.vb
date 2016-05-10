@@ -2,6 +2,19 @@
 
 Namespace EntityProperties
 
+    Public Class structureFormat : Inherits EntityProperty
+
+    End Class
+    Public Class structureData : Inherits EntityProperty
+
+    End Class
+    Public Class molecularWeight : Inherits EntityProperty
+
+    End Class
+    Public Class standardName : Inherits EntityProperty
+
+    End Class
+
     Public Class component : Inherits EntityProperty
     End Class
 
