@@ -119,6 +119,7 @@
     <Compile Include="Level3\Elements\SmallMolecule.vb" />
     <Compile Include="Level3\Elements\OwlOntology.vb" />
     <Compile Include="Level3\File.vb" />
+    <Compile Include="Level3\Schema\DatatypeProperty.vb" />
     <Compile Include="Level3\Schema\FunctionalProperty.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
