@@ -18,6 +18,17 @@ Namespace Level3.Schema
         Public Property [Class] As [Class]
     End Class
 
+    ''' <summary>
+    ''' Definition: Imposes ordering on a step in a biochemical pathway. 
+    ''' 
+    ''' Retionale: A biochemical reaction can be reversible by itself, 
+    ''' but can be physiologically directed In the context Of a pathway, 
+    ''' For instance due To flux Of reactants And products. 
+    ''' 
+    ''' Usage: Only one conversion interaction can be ordered at a time, 
+    ''' but multiple catalysis Or modulation instances can be part Of 
+    ''' one Step.
+    ''' </summary>
     Public Class [Class] : Inherits RDFEntity
         Public Property unionOf As unionOf
         ''' <summary>
@@ -46,6 +57,11 @@ Namespace Level3.Schema
         <XmlElement> Public Property [Class] As RDFProperty()
     End Class
 
+    ''' <summary>
+    ''' A binding feature represents a &quot;half&quot; of the bond between two entities. 
+    ''' This property points to another binding feature which represents the other half. 
+    ''' The bond can be covalent or non-covalent.
+    ''' </summary>
     Public Class InverseFunctionalProperty : Inherits RDFEntity
         <XmlElement> Public Property type As RDFProperty()
         Public Property domain As domain
