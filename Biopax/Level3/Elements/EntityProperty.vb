@@ -43,6 +43,11 @@ Namespace EntityProperties
 
     End Class
 
+    Public Class [date] : Inherits EntityProperty
+
+    End Class
+
+
     Public Class term : Inherits EntityProperty
 
     End Class

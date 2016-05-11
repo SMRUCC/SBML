@@ -112,6 +112,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Biopax\Ontology.vb" />
     <Compile Include="Level2\Elements\Ontology.vb" />
     <Compile Include="Level2\File.vb" />
     <Compile Include="Level3\Elements\EntityProperty.vb" />
@@ -183,9 +184,7 @@
       <Name>VB_RDF</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Biopax\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

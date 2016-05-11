@@ -4,7 +4,7 @@ Imports Microsoft.VisualBasic.Serialization
 
 Namespace MetaCyc.Biopax.Level3.Elements
 
-    <XmlType("Ontology")> Public Class owlOntology ： Inherits RDFEntity
+    <XmlType("Ontology")> Public Class owlOntology : Inherits RDFEntity
         <XmlElement("imports")> Public Property owlImports As owlImports
 
         Public Overrides Function ToString() As String
