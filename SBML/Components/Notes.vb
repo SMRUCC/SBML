@@ -49,7 +49,7 @@ Namespace Components
     Public Class [Property] : Implements IReadOnlyId, sIdEnumerable
         Implements IKeyValuePairObject(Of String, String)
 
-        Public Property Name As String Implements IKeyValuePairObject(Of String, String).Identifier, IReadOnlyId.locusId, sIdEnumerable.Identifier
+        Public Property Name As String Implements IKeyValuePairObject(Of String, String).Identifier, IReadOnlyId.Identity, sIdEnumerable.Identifier
         Public Property value As String Implements IKeyValuePairObject(Of String, String).Value
 
         Public Overrides Function ToString() As String

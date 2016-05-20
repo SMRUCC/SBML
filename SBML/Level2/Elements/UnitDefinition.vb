@@ -6,7 +6,7 @@ Namespace Level2.Elements
 
     Public Class unitDefinition : Implements IReadOnlyId
 
-        <XmlAttribute> Public Property id As String Implements IReadOnlyId.locusId
+        <XmlAttribute> Public Property id As String Implements IReadOnlyId.Identity
         Public Property listOfUnits As List(Of Unit)
 
         Public Overrides Function ToString() As String
