@@ -32,9 +32,6 @@ Namespace EntityProperties
 
     End Class
 
-    Public Class comment : Inherits EntityProperty
-    End Class
-
     Public Class xref : Inherits EntityProperty
 
     End Class
