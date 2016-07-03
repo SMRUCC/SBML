@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::bb5ad6442289c7fb079e7459ad8e5f11, ..\SBML\IFBAC2.vb"
+﻿#Region "Microsoft.VisualBasic::6a56f6e3fe5239aea93c0db027ff41b8, ..\GCModeller\models\SBML\SBML\IFBAC2.vb"
 
     ' Author:
     ' 
@@ -25,7 +25,7 @@
 
 #End Region
 
-Imports LANS.SystemsBiology.ComponentModel.EquaionModel
+Imports SMRUCC.genomics.ComponentModel.EquaionModel
 Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
 
 Namespace FLuxBalanceModel

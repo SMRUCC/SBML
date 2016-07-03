@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::a150e95e555a94082c09b6a7cba770ba, ..\SBML\Export\Intersection.vb"
+﻿#Region "Microsoft.VisualBasic::54e302693b710ccce0e6039a5d370f7b, ..\GCModeller\models\SBML\SBML\Export\Intersection.vb"
 
     ' Author:
     ' 
@@ -26,14 +26,14 @@
 #End Region
 
 Imports System.Runtime.CompilerServices
-Imports LANS.SystemsBiology.Assembly.KEGG.DBGET
-Imports LANS.SystemsBiology.Assembly.SBML.Level2
-Imports LANS.SystemsBiology.ComponentModel.EquaionModel.DefaultTypes
 Imports Microsoft.VisualBasic.CommandLine.Reflection
 Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
 Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic.Scripting.MetaData
 Imports Microsoft.VisualBasic.Terminal.Utility
+Imports SMRUCC.genomics.Assembly.KEGG.DBGET
+Imports SMRUCC.genomics.ComponentModel.EquaionModel.DefaultTypes
+Imports SMRUCC.genomics.Model.SBML.Level2
 
 Namespace ExportServices
 

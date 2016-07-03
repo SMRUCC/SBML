@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::0360ded6e92694a4ff115ee9000816a9, ..\SBML\Export\KEGG.vb"
+﻿#Region "Microsoft.VisualBasic::9989ec2625764744d12cef8d8829d886, ..\GCModeller\models\SBML\SBML\Export\KEGG.vb"
 
     ' Author:
     ' 
@@ -26,12 +26,12 @@
 #End Region
 
 Imports System.Runtime.CompilerServices
-Imports LANS.SystemsBiology.Assembly.KEGG.DBGET
-Imports LANS.SystemsBiology.Assembly.SBML.Level2.Elements
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
-Imports LANS.SystemsBiology.ComponentModel.EquaionModel.DefaultTypes
-Imports Microsoft.VisualBasic.Linq
 Imports Microsoft.VisualBasic
+Imports Microsoft.VisualBasic.Linq
+Imports SMRUCC.genomics.Assembly.KEGG.DBGET
+Imports SMRUCC.genomics.ComponentModel.EquaionModel.DefaultTypes
+Imports SMRUCC.genomics.Model.SBML.Level2.Elements
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace ExportServices
 

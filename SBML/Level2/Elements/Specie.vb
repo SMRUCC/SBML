@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::03ba241392b31ef0e093ffd2e974d8be, ..\SBML\Level2\Elements\Specie.vb"
+﻿#Region "Microsoft.VisualBasic::e3fe227aed8c8a6acd26bb1fc365bf68, ..\GCModeller\models\SBML\SBML\Level2\Elements\Specie.vb"
 
     ' Author:
     ' 
@@ -26,9 +26,9 @@
 #End Region
 
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.Components
-Imports LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
+Imports SMRUCC.genomics.Model.SBML.Components
+Imports SMRUCC.genomics.Model.SBML.FLuxBalanceModel
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Level2.Elements
 

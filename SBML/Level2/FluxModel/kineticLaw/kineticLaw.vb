@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::9f6f446adf5dbe0e4f7b7daaaa9c088d, ..\SBML\Level2\FluxModel\kineticLaw\kineticLaw.vb"
+﻿#Region "Microsoft.VisualBasic::271ef4e1605a75946edbfdba8422038e, ..\GCModeller\models\SBML\SBML\Level2\FluxModel\kineticLaw\kineticLaw.vb"
 
     ' Author:
     ' 
@@ -27,9 +27,9 @@
 
 Imports System.Text
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel.IFBA
-Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
 Imports Microsoft.VisualBasic
+Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
+Imports SMRUCC.genomics.Model.SBML.FLuxBalanceModel.IFBA
 
 Namespace Level2.Elements
 

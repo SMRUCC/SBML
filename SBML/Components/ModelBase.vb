@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::dc8ac87cc3dd54d455211e07bc6f92fe, ..\SBML\Components\ModelBase.vb"
+﻿#Region "Microsoft.VisualBasic::b8871f920208cdd3263ae8bc8ebf0e16, ..\GCModeller\models\SBML\SBML\Components\ModelBase.vb"
 
     ' Author:
     ' 
@@ -26,7 +26,7 @@
 #End Region
 
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Components
 

@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::394c251439691fa34f251eb78a378e45, ..\SBML\Specifics\MetaCyc\Property\FluxPropReader.vb"
+﻿#Region "Microsoft.VisualBasic::d28e6f75780c5eecdbee4f1d338a9ea6, ..\GCModeller\models\SBML\SBML\Specifics\MetaCyc\Property\FluxPropReader.vb"
 
     ' Author:
     ' 
@@ -25,7 +25,7 @@
 
 #End Region
 
-Imports LANS.SystemsBiology.Assembly.SBML.Components
+Imports SMRUCC.genomics.Model.SBML.Components
 
 Namespace Specifics.MetaCyc
 

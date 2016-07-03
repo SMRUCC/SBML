@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::6269b523d081d03613a9ec10746a15b6, ..\SBML\Specifics\MetaCyc\Escaping.vb"
+﻿#Region "Microsoft.VisualBasic::6269b523d081d03613a9ec10746a15b6, ..\GCModeller\models\SBML\SBML\Specifics\MetaCyc\Escaping.vb"
 
     ' Author:
     ' 

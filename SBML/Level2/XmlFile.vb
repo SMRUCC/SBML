@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::eebdbe3e66181be116151e46cfd6362b, ..\SBML\Level2\XmlFile.vb"
+﻿#Region "Microsoft.VisualBasic::632eb4221df396de21dc1a2c634197d9, ..\GCModeller\models\SBML\SBML\Level2\XmlFile.vb"
 
     ' Author:
     ' 
@@ -29,9 +29,9 @@ Imports System.Text.RegularExpressions
 Imports System.Text
 Imports System.Xml.Serialization
 Imports Microsoft.VisualBasic.ComponentModel
-Imports LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel
-Imports LANS.SystemsBiology.Assembly.SBML.Level2.Elements
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
+Imports SMRUCC.genomics.Model.SBML.FLuxBalanceModel
+Imports SMRUCC.genomics.Model.SBML.Level2.Elements
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Level2
 
@@ -42,7 +42,7 @@ Namespace Level2
     Public Class XmlFile : Inherits ITextFile
         Implements I_FBAC2(Of speciesReference)
 
-        <XmlElement("model")> Public Shadows Property Model As Model
+        <XmlElement("model")> Public Shadows Property Model As Level2.Elements.Model
         <XmlAttribute> Public Property level As Integer
         <XmlAttribute> Public Property version As Integer
 

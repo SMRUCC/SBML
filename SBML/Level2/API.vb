@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::a8217a9bde5eefe4203d0182e78a9b28, ..\SBML\Level2\API.vb"
+﻿#Region "Microsoft.VisualBasic::8522c20297f1d6553872b3aeb8978ed9, ..\GCModeller\models\SBML\SBML\Level2\API.vb"
 
     ' Author:
     ' 
@@ -25,13 +25,13 @@
 
 #End Region
 
-Imports System.Text.RegularExpressions
-Imports System.Text
-Imports LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel
 Imports System.Runtime.CompilerServices
-Imports LANS.SystemsBiology.Assembly.SBML.Level2.Elements
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
+Imports System.Text
+Imports System.Text.RegularExpressions
 Imports Microsoft.VisualBasic
+Imports SMRUCC.genomics.Model.SBML.FLuxBalanceModel
+Imports SMRUCC.genomics.Model.SBML.Level2.Elements
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Level2
 

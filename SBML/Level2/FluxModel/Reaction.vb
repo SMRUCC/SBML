@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::aa4914eadda700ec2af80bae1ded00c1, ..\SBML\Level2\FluxModel\Reaction.vb"
+﻿#Region "Microsoft.VisualBasic::07563087dbdaefcbf80add9a8b921d18, ..\GCModeller\models\SBML\SBML\Level2\FluxModel\Reaction.vb"
 
     ' Author:
     ' 
@@ -26,12 +26,12 @@
 #End Region
 
 Imports System.Text
-Imports LANS.SystemsBiology.ComponentModel.EquaionModel
-Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.Components
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
-Imports LANS.SystemsBiology.Assembly.SBML.FLuxBalanceModel.IFBA
+Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
+Imports SMRUCC.genomics.ComponentModel.EquaionModel
+Imports SMRUCC.genomics.Model.SBML.Components
+Imports SMRUCC.genomics.Model.SBML.FLuxBalanceModel.IFBA
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Level2.Elements
 

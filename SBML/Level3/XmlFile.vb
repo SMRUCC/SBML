@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::32a73927887e8c2fbc484b05a0bf76ed, ..\SBML\Level3\XmlFile.vb"
+﻿#Region "Microsoft.VisualBasic::987d96f073ef56a0f376ff3ebb706775, ..\GCModeller\models\SBML\SBML\Level3\XmlFile.vb"
 
     ' Author:
     ' 
@@ -26,8 +26,8 @@
 #End Region
 
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.Components
 Imports Microsoft.VisualBasic
+Imports SMRUCC.genomics.Model.SBML.Components
 
 Namespace Level3
 

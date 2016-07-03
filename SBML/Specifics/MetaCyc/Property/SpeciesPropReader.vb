@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::bfb3ce715475837bc3598c2f8783e850, ..\SBML\Specifics\MetaCyc\Property\SpeciesPropReader.vb"
+﻿#Region "Microsoft.VisualBasic::7745d8054e781eb502f119fa9e1512eb, ..\GCModeller\models\SBML\SBML\Specifics\MetaCyc\Property\SpeciesPropReader.vb"
 
     ' Author:
     ' 
@@ -25,7 +25,7 @@
 
 #End Region
 
-Imports LANS.SystemsBiology.Assembly.SBML.Components
+Imports SMRUCC.genomics.Model.SBML.Components
 
 Namespace Specifics.MetaCyc
 

@@ -1,4 +1,4 @@
-﻿#Region "Microsoft.VisualBasic::e46d0185178a68bd1368161c0b2e6a0d, ..\SBML\Level2\Elements\speciesReference.vb"
+﻿#Region "Microsoft.VisualBasic::bccf60045d50a6ee3eccdd77df2df7de, ..\GCModeller\models\SBML\SBML\Level2\Elements\speciesReference.vb"
 
     ' Author:
     ' 
@@ -27,9 +27,9 @@
 
 Imports System.Text
 Imports System.Xml.Serialization
-Imports LANS.SystemsBiology.Assembly.SBML.Specifics.MetaCyc
-Imports LANS.SystemsBiology.ComponentModel.EquaionModel
 Imports Microsoft.VisualBasic.ComponentModel.Collection.Generic
+Imports SMRUCC.genomics.ComponentModel.EquaionModel
+Imports SMRUCC.genomics.Model.SBML.Specifics.MetaCyc
 
 Namespace Level2.Elements
 
